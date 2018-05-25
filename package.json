@@ -1,0 +1,14 @@
+{
+  "name": "express-gateway-plugin-dev-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "manifest.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "evil-dns": "^0.2.0"
+  }
+}
