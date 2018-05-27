@@ -8,7 +8,7 @@ exports.start = function(){
     var key = path.join(__dirname,'server.key');
 
     var osType = os.type();
-    if(osType == 'Darwin'){
+    if(process.env.APP_ENV != 'dev' || osType != 'Linux'){
       console.info('No start ngrokd.')
       return;
     }
