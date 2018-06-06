@@ -5,6 +5,9 @@ var devProxy = require('./dev-proxy');
 
 module.exports = {
   name: 'dev-proxy',
+  schema: {
+    $id: 'http://express-gateway.io/schemas/policies/dev-proxy-policy.json',
+  },
   policy: (actionParams) => {
 
     const proxy = httpProxy.createProxyServer({ changeOrigin: true });
