@@ -15,7 +15,7 @@ exports.run =function (req,res,next,proxy){
     var option = { 
       target: 'http://'+hostname+':10803'    //必须带http://
     };
-    req.headers['proxy-url'] = req._api.serviceEndpoint.proxyUrl;
+    req.headers['local-url'] = req._api.serviceEndpoint.localUrl;
     proxy.web(req, res, option);
 
 }
